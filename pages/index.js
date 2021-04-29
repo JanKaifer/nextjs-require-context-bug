@@ -67,3 +67,8 @@ export default function Home() {
     </div>
   )
 }
+
+export function getStaticProps() {
+  const keys = require.context("./api").keys()
+  return { props: {} }
+}
